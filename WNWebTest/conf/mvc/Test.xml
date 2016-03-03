@@ -8,9 +8,17 @@
 			<map>
 				<entry key="test" value="TestAction" />
 				<entry key="add_test" value="AddTestAction" />
+				<entry key="demo" value="DemoAction" />
+				<entry key="insert" value="insertAction" />
+				<entry key="update" value="updateAction" />
+				<entry key="delete" value="deleteAction" />
 			</map>
 		</property>
 	</bean>
 	<bean name="TestAction" class="test.wn.modules.TestAction" scope="request"/>
 	<bean name="AddTestAction" class="test.wn.modules.AddTestAction" scope="request"/>
+	<bean name="DemoAction" class="test.wn.modules.DemoAction" scope="request"/>
+	<bean name="insertAction" class="test.wn.modules.insertAction" scope="request"/>
+	<bean name="updateAction" class="test.wn.modules.updateAction" scope="request"/>
+	<bean name="deleteAction" class="test.wn.modules.deleteAction" scope="request"/>
 </beans>

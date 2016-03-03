@@ -43,7 +43,7 @@ public class AddTestAction extends BaseApiAction {
         //int rs = TestService.isnert(buildTest(param));
 
         ///事务操作
-        int rs = (int) getTs(buildTest(param)).doService();
+        int rs = (Integer) getTs(buildTest(param)).doService();
 
         if (rs > 0){
             return result_success(1);

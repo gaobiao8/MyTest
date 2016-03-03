@@ -20,6 +20,7 @@ public class TestService extends BaseService {
 
     public static Test getById(Integer id) throws SQLException {
         Expression where = new Expression("id").eq(id);
+
         return getSelect().selectSingle(Test.class, where);
     }
 
@@ -35,4 +36,9 @@ public class TestService extends BaseService {
         test.setId(TestDB.TestDB().getUpdate().insertAndGetGeneratedKeys(test).intValue());
         return test;
     }
+
+
+
+
+
 }
